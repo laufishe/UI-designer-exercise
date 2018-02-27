@@ -1,6 +1,133 @@
 html, body {
+    background:#f7f6f1;
     font-family: 'Open Sans', sans-serif;
     font-weight:400;
     color:#484848;
     font-size:100%;
+}
+img {
+    max-width:100%;
+    height:auto;
+    vertical-align:bottom;
+}
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+.field {
+    display: block;
+    height: 40px;
+    line-height: 1em;
+    padding: 0 12px;
+    margin-bottom: 14px;
+    font-size: 1em;
+    color: #5c6b80;
+    border-radius: 3px;
+    border: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: #bfbcaf;
+}
+p {
+    -webkit-hyphens: none;
+    -epub-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+    margin:.35em 0 .45em;
+}
+a.button,button.button {
+    display: inline-block;
+    padding: 8px 14px;
+    color: #fff;
+    border:0;
+    border-radius:4px;
+    text-decoration:none;
+}
+.call-button,.footer-call-button {
+    background: #212529;
+}
+.primary-button {
+    background:#a0870f;
+    color:#fff;
+}
+.header{
+    background:#e8e1ac;
+    border-bottom:8px solid #b1a050;
+    color:
+}
+.header-contact{
+    text-align:center;
+}
+.header-contact p {
+    margin:10px 0;
+}
+h1.logo{
+    color:#c51a1b;
+    font-weight:800;
+    font-size:48px;
+    margin-top:.55em;
+    text-align:center;
+}
+.inner-content{
+    padding:2em;
+}
+.gallery img,
+.sidebar-img-container  img {
+    margin-bottom:10px;
+    background:#fff;
+    border:1px solid #b9b9b9;
+    padding:8px;
+}
+
+footer {
+    background:#c3c3c3;
+    color:#2d2c2c;
+}
+.footer-contact{
+    text-align:center;
+    padding:1em;
+}
+@media (min-width: 768px) {
+    h1.logo{
+        font-size:45px;
+        text-align:left;
+    }
+    .header-contact{
+        text-align:right;
+    }
+    .call-button.button, .call-button.button:hover{
+        color: #212529;
+        cursor:default;
+        font-size:18px;
+        font-weight:600;
+        padding:0;
+        background:transparent;
+        text-decoration:none;
+    }
+    .gallery img {
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+        max-width:400px;
+    }
+    .footer-call-button.button,.footer-call-button.button:hover{
+        color:#2d2c2c;
+        cursor:default;
+        padding:0;
+        background:transparent;
+        text-decoration:none;
+    }
 }

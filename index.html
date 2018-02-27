@@ -7,50 +7,76 @@
     <title>Welcome to Joe's Diner!</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="Fisher">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--<script src="js/scripts.js"></script>-->
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
 </head>
 
 <body>
-    <header class="header container-fluid">
-        <div class="inner-header row">
-            <div class="header-logo col-md-8">
-                Joe's Diner
-            </div>
-            <div class="header-contact col-md-4">
-                <p><a href="tel:+17162700000">716-270-0000</a></p>
-                <p> 298 Main St.<br>
-                Buffalo, NY     14202</p>
+    <header class="header">
+        <div class="container">
+            <div class="inner-header row">
+                <div class="header-logo col-md-8">
+                    <h1 class="logo" tabindex="0">Joe's Diner</h1>
+                </div>
+                <div class="header-contact col-md-4">
+                    <p><a class="call-button button" href="tel:+17162700000">716-270-0000</a></p>
+                    <p> 298 Main St.<br>
+                    Buffalo, NY     14202</p>
+                </div>
             </div>
         </div>
     </header>
-    <p>Joe's Diner was opened in Buffalo in 1971.
-    Joseph Shmoe Sr. started this diner with his wife Marla in order to bring their passion for mediocre sustenance to the already restaurant-saturated downtown Buffalo.</p>
+    <article class="page-content container">
+        <div class="inner-content row">
+            <div class="col-md-5 order-md-last">
+                <div class="sidebar-img-container">
+                    <div class="inner-img-container">
+                        <img src="assets/images/burger.jpg" alt="Classic burger with onion rings">
+                    </div>
+                </div>
+                <h3 tabindex="0">Have a question?</h3>
+                <form action="submit.php" method="post">
+                    <label for="name">Name</label>
+                    <input name="name" id="name" type="text"/>
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email"/>
+                    <label for="comment-area">Comments</label>
+                    <textarea id="comment-area"></textarea>
+                    <div class="submit-area">
+                        <button type="submit" class="primary-button button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-7 order-md-first">
+                <h2>Joe's Diner was opened in Buffalo in 1971.</h2>
+                <p>Joseph Shmoe Sr. started this diner with his wife Marla in order to bring their passion for mediocre sustenance to the already restaurant-saturated downtown Buffalo.</p>
+                <p>Bacon ipsum dolor amet meatloaf tenderloin pancetta, kielbasa spare ribs tongue fatback beef ribs sirloin tail. Tri-tip brisket drumstick sausage, cupim pancetta venison pig. Spare ribs meatball filet mignon flank pork chuck boudin prosciutto tenderloin beef ribs turkey. Ground round corned beef tri-tip pork, short loin boudin filet mignon cow capicola prosciutto leberkas short ribs spare ribs chuck.</p>
+                <p>Leberkas kielbasa tenderloin, sirloin biltong bacon corned beef. Tenderloin meatloaf beef ribs strip steak rump ground round, shank t-bone brisket pastrami. Shankle bresaola rump short ribs frankfurter venison beef andouille burgdoggen. Chicken cupim bresaola beef pastrami shank corned beef tongue.</p>
+                <div class="gallery">
+                    <img src="assets/images/pancakes.jpg" alt="Pancake breakfast with eggs and bacon">
+                    <img src="assets/images/pie.jpg" alt="Our famous pumpkin pie">
+                </div>
+            </div>
+        </div>
+    </article>
 
-<p>Bacon ipsum dolor amet meatloaf tenderloin pancetta, kielbasa spare ribs tongue fatback beef ribs sirloin tail. Tri-tip brisket drumstick sausage, cupim pancetta venison pig. Spare ribs meatball filet mignon flank pork chuck boudin prosciutto tenderloin beef ribs turkey. Ground round corned beef tri-tip pork, short loin boudin filet mignon cow capicola prosciutto leberkas short ribs spare ribs chuck.</p>
-    <p>
-            Leberkas kielbasa tenderloin, sirloin biltong bacon corned beef. Tenderloin meatloaf beef ribs strip steak rump ground round, shank t-bone brisket pastrami. Shankle bresaola rump short ribs frankfurter venison beef andouille burgdoggen. Chicken cupim bresaola beef pastrami shank corned beef tongue.
-    </p>
-    <img src="assets/images/pancakes.jpg" alt="">
-    <img src="assets/images/burger.jpg" alt="">
-<img src="pie.jpg">
-<hr>
-<h2>Contact Us!</h2>
-    <form action="submit.php" method="post">
-        <label>Comments</label>
-            <textarea rows="4" cols="50"></textarea>
-            <br>
-<label>Email</label>
-<input type="text"/>
-<button type="submit">Submit</button>
-    </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="inner-footer row">
+                <div class="footer-contact col-12">
+                    <address>
+                        <p>&copy; Joe's Diner. <a class="footer-call-button button" href="tel:+17162700000">716-270-0000</a> | 298 Main St. Buffalo, NY 14202</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
